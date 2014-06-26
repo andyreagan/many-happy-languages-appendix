@@ -323,7 +323,7 @@
 	}
 	if (authors[i].scholar.length > 0) {
 	    if (authorcount % 4 === 0 && authorcount > 0) { divcenter.append("p").attr("class","smallbreak"); }; authorcount++; 
-	    divcenter.append("a").attr("href",authors[i].scholar).attr("target","_blank").html("<i class=\"fa fa-google fa-fw fa-lg\"></i>");
+	    divcenter.append("a").attr("href",authors[i].scholar).attr("target","_blank").html("<i class=\"fa fa-graduation-cap fa-fw fa-lg\"></i>");
 	}
 	if (authors[i].bitbucket.length > 0) {
 	    if (authorcount % 4 === 0 && authorcount > 0) { divcenter.append("p").attr("class","smallbreak"); }; authorcount++; 
