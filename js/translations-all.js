@@ -9614,7 +9614,7 @@ function findChart(){
 	    name: "Karine Megerdoomian",
 	    inst: "University of Vermont",
 	    role: "Lead Investigator",
-	    image: "roboctopus.png",
+	    image: "karine.png",
 	},
 	{
 	    name: "Matthew T. McMahon",

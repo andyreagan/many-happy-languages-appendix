@@ -11087,55 +11087,175 @@ function computeHapps() {
 var bookDecoder = d3.urllib.decoder().varresult("moby_dick").varname("book");
 
 var books = {
+    "blank": {
+	language: "",
+	fulltitle: "",
+	wiki: "",
+	ignore: [],
+    },
     "moby_dick": {
 	language: "english",
 	fulltitle: "Moby Dick",
 	wiki: "http://en.wikipedia.org/wiki/Moby-Dick",
+	ignore: ["cried", "cry", "coffin"],
+    },
+    "luther": {
+	language: "english",
+	fulltitle: "I Have a Dream",
+	wiki: "",
+	ignore: [],
+    },
+    "luther": {
+	language: "english",
+	fulltitle: "I Have a Dream",
+	wiki: "",
+	ignore: [],
     },
     "anna_karenina": {
 	language: "russian",
 	fulltitle: "Anna Karenina",
 	wiki: "http://en.wikipedia.org/wiki/Anna_Karenina",
+	ignore: [],
     },
     "count_of_monte_cristo": {
 	language: "french",
 	fulltitle: "Count of Monte Cristo",
 	wiki: "http://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo",
+	ignore: [],
     },
     "crime_and_punishment": {
 	language: "russian",
 	fulltitle: "Crime and Punishment",
 	wiki: "http://en.wikipedia.org/wiki/Crime_and_Punishment",
+	ignore: [],
+    },
+    "crime_and_punishment_en": {
+	language: "english",
+	fulltitle: "Crime and Punishment: English Translation",
+	wiki: "http://en.wikipedia.org/wiki/Crime_and_Punishment",
+	ignore: [],
+    },
+    "die_verwandlung_en": { 
+	language: "english", 
+	fulltitle: "Die Verwandlung: English Translation",
+	wiki: "http://en.wikipedia.org/wiki/The_Metamorphosis",
+	ignore: [],
     },
     "die_verwandlung": { 
 	language: "german",
 	fulltitle: "Die Verwandlung",
 	wiki: "http://en.wikipedia.org/wiki/The_Metamorphosis",
+	ignore: [],
     },
     "don_quixote": {
 	language: "spanish",
 	fulltitle: "Don Quixote",
 	wiki: "http://en.wikipedia.org/wiki/Don_Quixote",
+	ignore: [],
     },
     "the_three_musketeers": {
 	language: "french",
 	fulltitle: "The Three Musketeers",
 	wiki: "http://en.wikipedia.org/wiki/The_Three_Musketeers",
+	ignore: [],
+    },
+    "twoCities": {
+	language: "english",
+	fulltitle: "A Tale of Two Cities",
+	wiki: "",
+	ignore: [],
+    },
+    "expectations": {
+	language: "english",
+	fulltitle: "Great Expectations",
+	wiki: "",
+	ignore: [],
+    },
+    "pride": {
+	language: "english",
+	fulltitle: "Pride and Prejudice",
+	wiki: "",
+	ignore: [],
+    },
+    "huck": {
+	language: "english",
+	fulltitle: "Adventures of Huckleberry Finn",
+	wiki: "",
+	ignore: [],
+    },
+    "alice": {
+	language: "english",
+	fulltitle: "Alice's Adventures in Wonderland",
+	wiki: "",
+	ignore: [],
+    },
+    "tom": {
+	language: "english",
+	fulltitle: "The Adventures of Tom Sawyer",
+	wiki: "",
+	ignore: [],
+    },
+    "sherlock": {
+	language: "english",
+	fulltitle: "The Adventures of Sherlock Holmes",
+	wiki: "",
+	ignore: [],
+    },
+    "leaves": {
+	language: "english",
+	fulltitle: "Leaves of Grass",
+	wiki: "",
+	ignore: [],
+    },
+    "ulysses": {
+	language: "english",
+	fulltitle: "Ulysses",
+	wiki: "",
+	ignore: [],
+    },
+    "frankenstein": {
+	language: "english",
+	fulltitle: "Frakenstein; Or the Modern Prometheus",
+	wiki: "",
+	ignore: [],
+    },
+    "heights": {
+	language: "english",
+	fulltitle: "Wuthering Heights",
+	wiki: "",
+	ignore: [],
+    },
+    "sense": {
+	language: "english",
+	fulltitle: "Sense and Sensibility",
+	wiki: "",
+	ignore: [],
+    },
+    "twist": {
+	language: "english",
+	fulltitle: "Oliver Twist",
+	wiki: "",
+	ignore: [],
     },
 };
+
+var ignoreWords = [];
 
 function initializePlot() {
     book = bookDecoder().current;
     lang = books[book].language;
     var booktitle = d3.select("#booktitle");
     var title = booktitle.append("h2").text(books[book].fulltitle+" ");
+    for (var i=0; i<books[book].ignore.length; i++) {
+	ignoreWords.push(books[book].ignore[i]);
+    }
     title.append("small").append("a").attr("href",books[book].wiki).attr("target","_blank").text("(wiki)");
     loadCsv();
 }
 
 function loadCsv() {
     var csvLoadsRemaining = 4;
-    d3.text("data/"+book+"_freq_all.csv", function (text) {
+    d3.text("data/"+book+".csv", function (text) {
         tmp = text.split("\n");
         // kill extra rows
         var len = tmp.length - 1;
@@ -11202,8 +11322,12 @@ function initializePlotPlot(allDataRaw, lens, words) {
     lensDecoder = d3.urllib.decoder().varresult([3,7]).varname("lens");
 
     lensExtent = lensDecoder().current.map(parseFloat);
-
-    ignoreWords = ["cried", "cry", "coffin"];
+    
+    // ignore these on all
+    var alwaysIgnore = ["nigga","niggaz","niggas","nigger"]; //["cried", "cry", "coffin"];
+    for (var i=0; i<alwaysIgnore.length; i++) {
+	ignoreWords.push(alwaysIgnore[i]);
+    }
     refFextentDecoder = d3.urllib.decoder().varresult([0,.2]).varname("refExtent");				      
     refFextent = [Math.round(parseFloat(refFextentDecoder().current[0])*allDataRaw.length), Math.round(parseFloat(refFextentDecoder().current[1])*allDataRaw.length)];
     compFextentDecoder = d3.urllib.decoder().varresult([.8,1]).varname("compExtent");				      
@@ -11341,7 +11465,7 @@ initializePlot();
 	    name: "Karine Megerdoomian",
 	    inst: "University of Vermont",
 	    role: "Lead Investigator",
-	    image: "roboctopus.png",
+	    image: "karine.png",
 	},
 	{
 	    name: "Matthew T. McMahon",
