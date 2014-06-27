@@ -9620,7 +9620,7 @@ function findChart(){
 	    name: "Matthew T. McMahon",
 	    inst: "University of Vermont",
 	    role: "Lead Investigator",
-	    image: "roboctopus.png",
+	    image: "mmcmaho.png",
 	},
 	{
 	    name: "Brian F. Tivnan",

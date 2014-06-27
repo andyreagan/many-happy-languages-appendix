@@ -10936,7 +10936,7 @@ function drawBookTimeseries(figure,data) {
     // linear scale function
     var y =  d3.scale.linear()
 	.domain([d3.min(data),d3.max(data)])
-	.range([height-8, 10]); 
+	.range([height-10, 10]); 
 
     // create the axes themselves
     var axes = canvas.append("g")
@@ -11471,7 +11471,7 @@ initializePlot();
 	    name: "Matthew T. McMahon",
 	    inst: "University of Vermont",
 	    role: "Lead Investigator",
-	    image: "roboctopus.png",
+	    image: "mmcmaho.png",
 	},
 	{
 	    name: "Brian F. Tivnan",
