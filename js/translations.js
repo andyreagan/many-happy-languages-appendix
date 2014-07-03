@@ -21,11 +21,11 @@ function drawChart() {
     data.addRows([
 	[ 1, null, null ,1 ],[ 9, null, null ,9 ],]);
 
-    d3.text("data/translation-files/TransValChart_"+ref+"_"+comp+".txt", function(translation) {
-
+    d3.text("data/TranslationAppendixCharts2/TransValChart_"+ref+"_"+comp+".txt", function(translation) {
+	console.log("loaded file");
 	tmp = translation.split("\n");
 	tmp = tmp.slice(1,tmp.length-1);
-	tmp = tmp.map(function(d) { return [parseFloat(d.split(",")[0]),parseFloat(d.split(",")[1]),d.split(",")[2]+","+d.split(",")[3],null]; });
+	tmp = tmp.map(function(d) { return [parseFloat(d.slice(2,d.length-1).split(",")[0]),parseFloat(d.split(",")[1]),d.split(",")[2].slice(2,d.split(",")[2].length)+","+d.split(",")[3].slice(0,d.split(",")[3].length-1),null]; });
 	data.addRows(tmp);
 
         fontscale = d3.scale.linear().domain([320,940]).range([12,28]);
