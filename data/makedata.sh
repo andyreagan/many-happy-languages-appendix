@@ -15,3 +15,10 @@ cp *.csv books/
 tar -zcvf books.tgz books
 zip -r books.zip books
 tar -cvf books.tar books
+
+scp -r *.{csv,tgz,tar,zip} zoolab:public_html/share/papers/dodds2014a/data
+cd ../bin
+scp -r * zoolab:public_html/share/papers/dodds2014a/bin
+cd ../data
+
+ssh zoolab "cd public_html/share/papers/dodds2014a; ./localpermissions.sh"
