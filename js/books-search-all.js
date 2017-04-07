@@ -11241,7 +11241,7 @@ var books = {
     },
     "frankenstein": {
 	language: "english",
-	fulltitle: "Frakenstein; Or the Modern Prometheus",
+	fulltitle: "Frankenstein; Or the Modern Prometheus",
 	wiki: "",
     },
     "heights": {
@@ -11364,7 +11364,7 @@ var booklist = [
     },
     { caption: "frankenstein",
       language: "english",
-      fulltitle: "Frakenstein; Or the Modern Prometheus",
+      fulltitle: "Frankenstein; Or the Modern Prometheus",
       wiki: "",
     },
     { caption: "heights",
@@ -11395,6 +11395,7 @@ var substringMatcher = function(strs) {
             }
         }
         if (matches.length === 0) { matches.push({ value: "<i>book not indexed</i>" }); }
+	console.log(matches);
         cb(matches);
     };
 };

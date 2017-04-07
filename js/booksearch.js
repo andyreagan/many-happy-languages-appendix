@@ -108,7 +108,7 @@ var books = {
     },
     "frankenstein": {
 	language: "english",
-	fulltitle: "Frakenstein; Or the Modern Prometheus",
+	fulltitle: "Frankenstein; Or the Modern Prometheus",
 	wiki: "",
     },
     "heights": {
@@ -231,7 +231,7 @@ var booklist = [
     },
     { caption: "frankenstein",
       language: "english",
-      fulltitle: "Frakenstein; Or the Modern Prometheus",
+      fulltitle: "Frankenstein; Or the Modern Prometheus",
       wiki: "",
     },
     { caption: "heights",

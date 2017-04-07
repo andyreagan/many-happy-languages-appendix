@@ -115,3 +115,7 @@ p.smallbreak { margin-bottom: 5px; }
 /* can't seem to select the path */
 /* svg path :hover { fill: #52a5d8; } */
 /* path { fill: black;} */
+
+.well {
+    box-sizing: border-box;
+}

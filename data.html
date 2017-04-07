@@ -23,7 +23,7 @@
 
     <div class="container">
 
-      <h1>Human language reveals a universal positivity bias <a href="http://arxiv.org/abs/1406.3855" target="_blank">[arxiv]</a></h1>
+      <h1>Human language reveals a universal positivity bias <a href="http://arxiv.org/abs/1406.3855" target="_blank">[arxiv]</a> <a href="http://www.pnas.org/content/early/2015/02/04/1411678112" target="_blank">[PNAS]</a></h1>
 
       <h4>Peter Sheridan Dodds, Eric Clark, Suma Desu, Morgan Frank, Andrew Reagan, Jake Ryland Williams, Lewis Mitchell, Kameron Decker Harris, Isabel M. Kloumann, James P. Bagrow, Karine Megerdoomian, Matthew T. McMahon, Brian F. Tivnan, and Christopher M. Danforth</h4>
       
@@ -72,16 +72,19 @@
 		  <li><a href="books.html?book=sherlock">The Adventures of Sherlock Holmes</a></li> 
 		  <li><a href="books.html?book=leaves">Leaves of Grass</a></li> 
 		  <li><a href="books.html?book=ulysses">Ulysses</a></li> 
-		  <li><a href="books.html?book=frankenstein">Frakenstein; Or the Modern Prometheus</a></li> 
+		  <li><a href="books.html?book=frankenstein">Frankenstein; Or the Modern Prometheus</a></li> 
 		  <li><a href="books.html?book=heights">Wuthering Heights</a></li> 
 		  <li><a href="books.html?book=sense">Sense and Sensibility</a></li> 
 		  <li><a href="books.html?twist">Oliver Twist</a></li>
 		</ul>
               </li>
               <li><a href="translations.html">Translation Comparisons</a></li>
+              <li><a href="jellyfish.html">Jellyfish</a></li>
               <li class="active"><a href="data.html">Data</a></li>
               <li><a href="talks.html">Talks</a></li>
               <li><a href="team.html">Team</a></li>
+              <li><a href="code.html">Scripts</a></li>
+	      <li><a href="replies.html">Letters</a></li>
 	    </ul>
 	  </div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
@@ -90,75 +93,258 @@
       <div class="container-fluid">
 	<div class="center-block">
 	  <div class="row">
-	    <div class="col-xs-1 col-sm-4">
-	    </div>
-	    <div class="col-xs-11 col-sm-4">
-	      <h3>All:</h3>
+	    <div class="col-xs-12 col-sm-offset-1 col-sm-6">
+	      <h3>Complete data set:</h3>
 	      <h4>
 		<a href="data/data.zip">[.zip]</a>
 		<a href="data/data.tar">[.tar]</a>
 		<a href="data/data.tgz">[.tgz]</a>
-	      </h4>	      
-	      <h3>arabic:</h3>
+	      </h4>
+	      <p>See below for individual language downloads.</p>
+	    </div> <!-- col -->
+	  </div> <!-- row -->
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-offset-1 col-sm-11">
+	      <hr>
+	      <a href="http://hedonometer.org/data/maps/positivity-bias-world-map002-600.png" target="_blank"><img src="http://hedonometer.org/data/maps/positivity-bias-world-map002-100-20.png" class="img-responsive"></a>
 	      <h4>
+		Download figure:
+		<a href="http://hedonometer.org/data/maps/positivity-bias-world-map002-600.png">[png 600dpi]</a>
+		<a href="http://hedonometer.org/data/maps/positivity-bias-world-map002-100.png">[png 100dpi]</a>
+		<a href="http://hedonometer.org/data/maps/positivity-bias-world-map002.pdf">[pdf]</a>
+	      </h4>
+	      <hr>
+	    </div> <!-- col -->
+	  </div> <!-- row -->
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-offset-1 col-sm-6">
+	      <h4>Arabic</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Movie and TV Subtitles &mdash; 
+		<a href="data/arabic-movies_and_tv-words.txt">[words]</a>
+		<a href="data/arabic-movies_and_tv-scores.txt">[scores]</a>
+	      </p>	      
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-arabic.csv">[words]</a>
 		<a href="data/labMTscores-arabic.csv">[scores]</a>
-		<a href="data/labMTwordsEn-arabic.csv">[english]</a>
-	      </h4>
-	      <h3>chinese:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-arabic.csv">[words translated into English]</a>
+	      </p>
+	      <hr>
+	      <h4>Chinese:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Google Books &mdash; 
+		<a href="data/chinese-gbook-words.txt">[words]</a>
+		<a href="data/chinese-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-chinese.csv">[words]</a>
 		<a href="data/labMTscores-chinese.csv">[scores]</a>
-		<a href="data/labMTwordsEn-chinese.csv">[english]</a>
-	      </h4>
-	      <h3>english:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-chinese.csv">[words translated in English]</a>
+	      </p>
+	      <hr>
+	      <h4>English:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash;
+		<a href="data/english-twitter-words.txt">[words]</a>
+		<a href="data/english-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Books &mdash;
+		<a href="data/english-gbook-words.txt">[words]</a>
+		<a href="data/english-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <p>
+		The New York Times &mdash;
+		<a href="data/english-nyt-words.txt">[words]</a>
+		<a href="data/english-nyt-scores.txt">[scores]</a>
+		<a href="https://catalog.ldc.upenn.edu/LDC2008T19">[source]</a>
+	      </p>
+	      <p>
+		Music Lyrics &mdash;
+		<a href="data/english-music-words.txt">[words]</a>
+		<a href="data/english-music-scores.txt">[scores]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-english.csv">[words]</a>
 		<a href="data/labMTscores-english.csv">[scores]</a>
-		<a href="data/labMTwordsEn-english.csv">[english]</a>
-	      </h4>
-	      <h3>french:</h3>
-	      <h4>
+	      </p>
+	      <hr>
+	      <h4>French:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash;
+		<a href="data/french-twitter-words.txt">[words]</a>
+		<a href="data/french-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Books &mdash;
+		<a href="data/french-gbook-words.txt">[words]</a>
+		<a href="data/french-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <p>
+		Google Web Crawl &mdash; 
+		<a href="data/french-gweb-words.txt">[words]</a>
+		<a href="data/french-gweb-scores.txt">[scores]</a>
+		<a href="https://catalog.ldc.upenn.edu/LDC2006T13">[source]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-french.csv">[words]</a>
 		<a href="data/labMTscores-french.csv">[scores]</a>
-		<a href="data/labMTwordsEn-french.csv">[english]</a>
-	      </h4>
-	      <h3>german:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-french.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>German:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash; 
+		<a href="data/german-twitter-words.txt">[words]</a>
+		<a href="data/german-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Books &mdash;
+		<a href="data/german-gbook-words.txt">[words]</a>
+		<a href="data/german-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <p>
+		Google Web Crawl &mdash; 
+		<a href="data/german-gweb-words.txt">[words]</a>
+		<a href="data/german-gweb-scores.txt">[scores]</a>
+		<a href="https://catalog.ldc.upenn.edu/LDC2006T13">[source]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-german.csv">[words]</a>
 		<a href="data/labMTscores-german.csv">[scores]</a>
-		<a href="data/labMTwordsEn-german.csv">[english]</a>
-	      </h4>
-	      <h3>indonesian:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-german.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>Indonesian:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash; 
+		<a href="data/indonesian-twitter-words.txt">[words]</a>
+		<a href="data/indonesian-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Movies &mdash; 
+		<a href="data/indonesian-movies-words.txt">[words]</a>
+		<a href="data/indonesian-movies-scores.txt">[scores]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-indonesian.csv">[words]</a>
 		<a href="data/labMTscores-indonesian.csv">[scores]</a>
-		<a href="data/labMTwordsEn-indonesian.csv">[english]</a>
-	      </h4>
-	      <h3>korean:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-indonesian.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>Korean:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash;
+		<a href="data/korean-twitter-words.txt">[words]</a>
+		<a href="data/korean-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Movies &mdash;
+		<a href="data/korean-movies-words.txt">[words]</a>
+		<a href="data/korean-movies-scores.txt">[scores]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-korean.csv">[words]</a>
 		<a href="data/labMTscores-korean.csv">[scores]</a>
-		<a href="data/labMTwordsEn-korean.csv">[english]</a>
-	      </h4>
-	      <h3>portuguese:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-korean.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>Portuguese:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash;
+		<a href="data/portuguese-twitter-words.txt">[words]</a>
+		<a href="data/portuguese-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Web Crawl &mdash;
+		<a href="data/portuguese-gweb-words.txt">[words]</a>
+		<a href="data/portuguese-gweb-scores.txt">[scores]</a>
+		<a href="https://catalog.ldc.upenn.edu/LDC2006T13">[source]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-portuguese.csv">[words]</a>
 		<a href="data/labMTscores-portuguese.csv">[scores]</a>
-		<a href="data/labMTwordsEn-portuguese.csv">[english]</a>
-	      </h4>
-	      <h3>russian:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-portuguese.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>Russian:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash; 
+		<a href="data/russian-twitter-words.txt">[words]</a>
+		<a href="data/russian-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Books &mdash;
+		<a href="data/russian-gbook-words.txt">[words]</a>
+		<a href="data/russian-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <p>
+		Movie and TV Subtitles &mdash; 
+		<a href="data/russian-movies_and_tv-words.txt">[words]</a>
+		<a href="data/russian-movies_and_tv-scores.txt">[scores]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-russian.csv">[words]</a>
 		<a href="data/labMTscores-russian.csv">[scores]</a>
-		<a href="data/labMTwordsEn-russian.csv">[english]</a>
-	      </h4>
-	      <h3>spanish:</h3>
-	      <h4>
+		<a href="data/labMTwordsEn-russian.csv">[words translated to English]</a>
+	      </p>
+	      <hr>
+	      <h4>Spanish:</h4>
+	      <h5>Word lists and scores for individual corpora:</h5>
+	      <p>
+		Twitter &mdash;
+		<a href="data/spanish-twitter-words.txt">[words]</a>
+		<a href="data/spanish-twitter-scores.txt">[scores]</a>
+		<a href="https://gnip.com/">[source]</a>
+	      </p>
+	      <p>
+		Google Books &mdash;
+		<a href="data/spanish-gbook-words.txt">[words]</a>
+		<a href="data/spanish-gbook-scores.txt">[scores]</a>
+		<a href="https://books.google.com/ngrams/datasets">[source]</a>
+	      </p>
+	      <p>
+		Google Web Crawl &mdash;
+		<a href="data/spanish-gweb-words.txt">[words]</a>
+		<a href="data/spanish-gweb-scores.txt">[scores]</a>
+		<a href="https://catalog.ldc.upenn.edu/LDC2006T13">[source]</a>
+	      </p>
+	      <h5>Merged word lists and scores:</h5>
+	      <p>
 		<a href="data/labMTwords-spanish.csv">[words]</a>
 		<a href="data/labMTscores-spanish.csv">[scores]</a>
-		<a href="data/labMTwordsEn-spanish.csv">[english]</a>
-	      </h4>
+		<a href="data/labMTwordsEn-spanish.csv">[words translated to English]</a>
+	      </p>
 	    </div>
 	    <div class="col-xs-3 col-sm-0">
 	    </div>
@@ -175,6 +361,16 @@
     <script src="js/d3.andy.js"></script>
     <!-- <script src="js/team.js"></script> -->
     <script src="js/topteam.js"></script>
-  </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45564756-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body> <!-- test -->
 </html>
 
