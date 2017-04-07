@@ -1,0 +1,5 @@
+data.addRows([
+[ 6.02, 6.94, 'terres (6.02), terra (6.94)',null ],
+[ 2.12, 2.16, 'prison (2.12), prisão (2.16)',null ],
+[ 7.32, 7.28, 'danser (7.32), dançar (7.28)',null ],
+]);

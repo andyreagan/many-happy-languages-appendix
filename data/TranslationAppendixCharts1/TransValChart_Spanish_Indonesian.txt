@@ -1,0 +1,3 @@
+data.addRows([
+[ 6.74, 6.10, 'comprensión (6.74), pemahaman (6.10)',null ],
+]);

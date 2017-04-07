@@ -1,0 +1,3 @@
+data.addRows([
+[ 5.54, 5.28, 'disse (5.54), sagte (5.28)',null ],
+]);

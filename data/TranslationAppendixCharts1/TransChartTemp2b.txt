@@ -1,0 +1,90 @@
+
+pointSize: 1,
+
+legend: 'none',
+
+trendlines: { 1: { color: 'red',
+                   opacity: 0.2,
+
+ } },
+
+
+
+
+};
+
+
+
+var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+chart.draw(data, options);
+
+}
+
+</script>
+
+
+
+
+
+<title>Appendix X</title>
+
+
+
+<script type="text/javascript">
+
+
+
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-37158538-1']);
+
+
+(function() {
+
+var ga = document.createElement('script')
+_gaq.push(['_trackPageview']);
+
+; ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+})();
+
+	function findChart(){
+	 var e = document.getElementById("mydropX");
+	 var ChartValue = e.options[e.selectedIndex].value; 
+	 var e2 = document.getElementById("mydropY");
+	 var ChartValue2 = e2.options[e2.selectedIndex].value; 
+	 var GoLink = "TranslationAppendixPlot_"+ChartValue+"_"+ChartValue2;
+	  goTo(GoLink);
+	}//getChart
+
+</script>
+	
+  </head>
+
+
+
+
+
+
+  <body>
+  
+	  <h1>A Happy Appendix</h1>
+
+
+		<h2>Word Happiness Translation Comparisons</h2>
+
+
+	  <p>This is a comparison between the average user reported happiness scores between several languages.  The "happiness" of each word is rated by 50 distinct users on a scale of 1(sad) to 9 (happy).  Words from each row language are then translated into each column language and intersected with each other corpora.  Choose a link to view the comparison between a given row language vs its respective column language. </p>
+  
+
+<!-- Link Table -->
+<p> ________________________________________________________________________ <p>
+
+<p> ___X-axis_____Y-Axis_________________________________________________________ <p>
+
+

@@ -1,0 +1,8 @@
+data.addRows([
+[ 7.40, 7.88, 'gagner (7.40), ganar (7.88)',null ],
+[ 1.48, 1.92, 'morts (1.48), muertos (1.92)',null ],
+[ 5.72, 6.22, 'suite (5.72), continuación (6.22)',null ],
+[ 7.58, 7.88, 'agréable (7.58), bonito (7.88)',null ],
+[ 6.44, 7.06, 'célèbre (6.44), famoso (7.06)',null ],
+[ 6.64, 7.26, 'magie (6.64), magia (7.26)',null ],
+]);

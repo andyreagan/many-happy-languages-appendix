@@ -1,0 +1,6 @@
+data.addRows([
+[ 7.80, 7.72, 'viernes (7.80), sexta-feira (7.72)',null ],
+[ 1.66, 1.64, 'matar (1.66), matar (1.64)',null ],
+[ 1.54, 1.38, 'muerte (1.54), morte (1.38)',null ],
+[ 5.76, 5.58, 'ellos (5.76), eles (5.58)',null ],
+]);

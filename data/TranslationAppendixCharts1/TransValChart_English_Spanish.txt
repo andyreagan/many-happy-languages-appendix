@@ -1,0 +1,6 @@
+data.addRows([
+[ 8.44, 8.60, 'happiness (8.44), felicidad (8.60)',null ],
+[ 5.92, 6.38, 'citizen (5.92), ciudadano (6.38)',null ],
+[ 3.04, 2.88, 'jealousy (3.04), celos (2.88)',null ],
+[ 5.90, 6.36, 'personally (5.90), personalmente (6.36)',null ],
+]);

@@ -1,0 +1,4 @@
+data.addRows([
+[ 4.42, 4.04, 'diminuir (4.42), mengurangi (4.04)',null ],
+[ 5.44, 5.50, 'troca (5.44), pertukaran (5.50)',null ],
+]);

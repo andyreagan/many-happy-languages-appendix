@@ -1,0 +1,5 @@
+data.addRows([
+[ 8.42, 8.38, 'kebahagiaan (8.42), bonheur (8.38)',null ],
+[ 5.90, 5.92, 'tradisi (5.90), tradition (5.92)',null ],
+[ 2.24, 2.98, 'jahat (2.24), mal (2.98)',null ],
+]);

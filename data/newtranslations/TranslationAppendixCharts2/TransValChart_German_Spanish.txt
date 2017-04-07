@@ -1,0 +1,7 @@
+data.addRows([
+[ 7.54, 8.12, 'lächeln (7.54), sonreír (8.12)',null ],
+[ 6.30, 7.00, 'amerika (6.30), américa (7.00)',null ],
+[ 7.94, 8.68, 'liebe (7.94), amor (8.68)',null ],
+[ 3.90, 3.40, 'imperialismus (3.90), imperialismo (3.40)',null ],
+[ 3.00, 2.66, 'verurteilt (3.00), condenado (2.66)',null ],
+]);
